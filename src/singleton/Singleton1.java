@@ -12,8 +12,8 @@ public class Singleton1 {
 	}
 	
 	// 获得对象
-	public Singleton1 getInstance() {
-		return this.singleton1;
+	public static Singleton1 getInstance() {
+		return singleton1;
 	}
 
 	public void print() {
