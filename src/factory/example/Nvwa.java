@@ -19,7 +19,7 @@ public class Nvwa {
         blackHuman.getColor();
         blackHuman.talk();
         // 黄种人
-        System.out.println("---黑种人---");
+        System.out.println("---黄种人---");
         Human yellowHuman = yingYangLu.createHuman(YellowHuman.class);
         yellowHuman.getColor();
         yellowHuman.talk();

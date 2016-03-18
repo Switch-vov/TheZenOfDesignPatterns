@@ -8,9 +8,7 @@ package factory.complex;
 public abstract class AbstractHumanFactory {
     /**
      * 创建人类方法
-     * @param <T> 人类及其子类
-     * @param clazz 人类类对象
      * @return 人类及其子类
      */
-    public abstract <T extends Human> Human createHuman(Class<T> clazz);
+    public abstract Human createHuman();
 }

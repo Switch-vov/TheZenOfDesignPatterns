@@ -8,21 +8,19 @@ import factory.example.HumanFactory;
  */
 public class Nvwa {
     public static void main(String[] args) {
-        // 八卦炉
-        AbstractHumanFactory yingYangLu = new HumanFactory();
         // 白种人
         System.out.println("---白种人---");
-        Human whiteHuman = yingYangLu.createHuman(WhiteHuman.class);
+        Human whiteHuman = (new WhiteHumanFactory()).createHuman();
         whiteHuman.getColor();
         whiteHuman.talk();
         // 黑种类
         System.out.println("---黑种人---");
-        Human blackHuman = yingYangLu.createHuman(BlackHuman.class);
+        Human blackHuman = (new BlackHumanFactory()).createHuman();
         blackHuman.getColor();
         blackHuman.talk();
         // 黄种人
-        System.out.println("---黑种人---");
-        Human yellowHuman = yingYangLu.createHuman(YellowHuman.class);
+        System.out.println("---黄种人---");
+        Human yellowHuman = (new YellowHumanFactory()).createHuman();
         yellowHuman.getColor();
         yellowHuman.talk();
     }
