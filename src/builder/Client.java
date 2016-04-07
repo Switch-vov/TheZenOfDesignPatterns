@@ -15,7 +15,6 @@ public class Client {
         director.getCBMWModel().run();
         System.out.println("-----------------");
         director.getDBMWModel().run();
-
     }
 
 }
