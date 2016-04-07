@@ -33,4 +33,33 @@ public class Director {
         this.benzBuilder.setSequence(this.sequence);
         return (BenzModel) this.benzBuilder.getCarModel();
     }
+
+    public BenzModel getBBenzModel() {
+        this.sequence.clear();
+        this.sequence.add("engine boom");
+        this.sequence.add("stop");
+        this.benzBuilder.setSequence(this.sequence);
+        return (BenzModel) this.benzBuilder.getCarModel();
+    }
+
+    public BMWModel getCBMWModel() {
+        this.sequence.clear();
+        this.sequence.add("alarm");
+        this.sequence.add("start");
+        this.sequence.add("stop");
+        this.bmwBuilder.setSequence(this.sequence);
+        return (BMWModel) this.bmwBuilder.getCarModel();
+    }
+
+    public BMWModel getDBMWModel() {
+        this.sequence.clear();
+        this.sequence.add("start");
+        this.bmwBuilder.setSequence(this.sequence);
+        return (BMWModel) this.bmwBuilder.getCarModel();
+    }
+
+    /**
+     * 这里还可以添加多个通过建造者获取模型的方法
+     */
+
 }
